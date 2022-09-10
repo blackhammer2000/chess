@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(60px, auto));
+  grid-template-rows: repeat(8, minmax(60px, auto));
+  grid-auto-rows: minmax(60px, auto);
+  grid-auto-columns: minmax(60px, auto);
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.cell {
+  background-color: lightslategray;
+  border: 1px solid white;
+  display: grid;
+  place-items: center;
+  font-size: 3em;
+}
+
+/* .container div:nth-child(3n + 1) {
+  background-color: white;
+  color: black;
+} */
+
+.container .cell-white {
+  background-color: rgba(212, 166, 12, 0.603);
+}
+
+.white {
+  color: white;
+}
